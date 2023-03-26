@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <fieldset>
+    <form>
+    <legend><b>STUDENT REGISTRATION FORM</b></legend>
+    <div>
+        <br>
+        <label for="name"><b>Name: </b></label>
+        <input id="name" type="text" name="Name" placeholder="Enter Your Name">
+    </div>
+    <br>
+    <div>
+        <label for="email"><b>Email Address: </b></label>
+        <input id="email" type="email" name="Email" placeholder="Enter Your Mail ID">
+    </div>
+    <br>
+    <div>
+       <label for="mobileno"><b>Mobile No: </b></label>
+        <input id="mobileno" type="tel" name="Mobileno" placeholder="Enter Your Mobile number">
+    </div>
+    <br>
+    <div>
+       <label for="address"><b>Address: </b></label>
+        <input id="address" type="text" name="Address" placeholder="Enter Your Address">
+    </div>
+    <br>
+    <div>
+        <b>Joining Date :</b></div><input id=date type="date" name="Date">
+    </div>
+    <br>
+    <div id="level">
+        <br>
+        <b>Course :</b><br>
+        <input id="course" type="radio" name="Course1" input value="Core Java">
+        Core Java
+        <input id="course" type="radio" name="Course1" input value="Advance Java">
+        Advance Java
+        <br>
+    <br>
+    <div id="gender">
+    <b>Gender :</b><input id="gender1" type="radio" name="MyGender" input value="Male">
+    Male
+    <input id="gender2" type="radio" name="MyGender" input value="Female">
+    Female
+
+    </div>
+    <br>
+    <div>
+        <b>
+        Write About Yourself : </b><br><textarea name="myText" id="intro" cols="30" rows="5"></textarea>
+    </div>   
+    <br>
+    <div>
+        <label for="timing"><b>Timings :</b></label>
+        <select name="mytiming" id="timing" multiple>
+           <option value="morning">Morning</option>
+           <option value="evening">Evening</option>
+        </select>
+    </div>
+    <br><br>
+    <input type="button" name="button" id="btn" value="Submit Now" onclick="AddRow()">
+    <input type="button" id="reset-button" value="Reset" onclick="this.form.reset()">
+</fieldset>
+</form>
+<br>
+<center>
+<table border="7" id="show">
+    <thead>
+        <tr id="btna">
+            <th>Name</th>
+            <th>Email Address</th>
+            <th>Mobile no</th>
+            <th>Address</th>
+            <th>Joining Date</th>
+            <th>Courses</th>
+            <th>Gender</th>
+            <th>Timings</th>
+            <th>Introduction</th>
+        </tr>
+    </thead>
+</table>
+</center>
+<script src="main.js"></script>
+</body>
+</html>
